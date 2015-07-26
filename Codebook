@@ -1,0 +1,86 @@
+
+# Codebook
+
+This file describes the variables in the tidy dataset, created from the original data sets 'Human Activity Recognition Using Smartphones Data Set' (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
+
+'run_analysis.R' describes the steps taken in order to get from original data sets to the tidy data.Tidy data contains mean and standard deviation measurements of the original data, averaged by subject and activity. 
+
+The tidy dataset consists of subject and activity columns as well as 66  feature columns (coming from features of the original data set. For more info, see original data, features_info).
+Each row of the tidy dataset has average of each feature variable for each activity and each subject.
+
+* subject column: identifies  the subject who performed the activity.
+It ranges from 1 to 30.
+
+* activity column: describes the different activities
+Activities are: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
+* The feature columns have the feature names of the original dataset (see
+file 'features_info.txt'), with some modifications in order to have descriptive variable names). 
+Features are normalized and bounded within [-1,1] in the original dataset.
+                 
+tbodyacc.mean.x
+tbodyacc.mean.y
+tbodyacc.mean.z
+tgravityacc.mean.x       
+tgravityacc.mean.y        
+tgravityacc.mean.z       
+tbodyaccjerk.mean.x
+tbodyaccjerk.mean.y      
+tbodyaccjerk.mean.z
+tbodygyro.mean.x         
+tbodygyro.mean.y          
+tbodygyro.mean.z         
+tbodygyrojerk.mean.x
+tbodygyrojerk.mean.y     
+tbodygyrojerk.mean.z
+tbodyaccmag.mean         
+tgravityaccmag.mean
+tbodyaccjerkmag.mean     
+tbodygyromag.mean
+tbodygyrojerkmag.mean    
+fbodyacc.mean.x           
+fbodyacc.mean.y          
+fbodyacc.mean.z           
+fbodyaccjerk.mean.x      
+fbodyaccjerk.mean.y
+fbodyaccjerk.mean.z      
+fbodygyro.mean.x
+fbodygyro.mean.y         
+fbodygyro.mean.z
+fbodyaccmag.mean         
+fbodybodyaccjerkmag.mean
+fbodybodygyromag.mean    
+fbodybodygyrojerkmag.mean
+tbodyacc.std.x           
+tbodyacc.std.y
+tbodyacc.std.z           
+tgravityacc.std.x
+tgravityacc.std.y        
+tgravityacc.std.z
+tbodyaccjerk.std.x       
+tbodyaccjerk.std.y
+tbodyaccjerk.std.z       
+tbodygyro.std.x
+tbodygyro.std.y          
+tbodygyro.std.z
+tbodygyrojerk.std.x      
+tbodygyrojerk.std.y
+tbodygyrojerk.std.z      
+tbodyaccmag.std
+tgravityaccmag.std       
+tbodyaccjerkmag.std
+tbodygyromag.std         
+tbodygyrojerkmag.std
+fbodyacc.std.x           
+fbodyacc.std.y
+fbodyacc.std.z           
+fbodyaccjerk.std.x
+fbodyaccjerk.std.y       
+fbodyaccjerk.std.z
+fbodygyro.std.x          
+fbodygyro.std.y
+fbodygyro.std.z          
+fbodyaccmag.std
+fbodybodyaccjerkmag.std  
+fbodybodygyromag.std
+fbodybodygyrojerkmag.std 
